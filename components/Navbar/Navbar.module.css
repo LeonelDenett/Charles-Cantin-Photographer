@@ -1,0 +1,59 @@
+.navbar{
+    z-index: 1;
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+    height: 0;
+}
+.navbarDesktop{
+    z-index: 120;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    position: relative;
+    top: 1rem;
+}
+@media (min-width:250px) and (max-width:899px) {
+    .navbarDesktop {
+        display: none;
+    }
+}
+.link{
+    text-decoration: none;
+    margin: 2rem;
+    position: relative;
+    left: 2rem;
+}
+.logo{
+    z-index: 12;
+    border-radius: 1% 0 1% 50%;
+}
+.logoContainer, .logoContainerHome{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 7;
+    height: 10rem;
+    max-height: 10rem;
+    transition: width 0.8s;
+    transition-delay: 0.4s;
+}
+.logoContainerHome{
+    width: 10rem;
+}
+.logoContainer{
+    width: 73%;
+}
+.logoDesktop{
+    width: 10rem;
+    max-width: 10rem;
+    height: 10rem;
+    max-height: 10rem;
+    position: relative;
+    left: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+.logoDesktop{
+    border-radius: 50%;
+}

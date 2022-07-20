@@ -1,0 +1,26 @@
+.carousel{
+    width: 100%;
+    height: 100%;
+}
+.imageContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.iconContainer{
+    z-index: 3;
+    position: absolute;
+    bottom: 2rem;
+    color: black;
+    transition: all 0.3s;
+    box-shadow: inset 0px 0px 5px 0px rgba(0,0,0,0.5);
+}
+.iconContainer:hover{
+    color: #FBF8F1;
+    box-shadow: inset 35px 0px 0px 35px rgba(0,0,0,0.5);
+}
+.icon{
+    font-size: 3rem;
+}

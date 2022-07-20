@@ -1,0 +1,35 @@
+.container {
+    text-align: center;
+    background-color: #FEFBE7;
+}
+.content{
+    padding-top: 11rem;
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+}
+.drawerContainer{
+    display: flex;
+    width: 100%;
+}
+.drawer{
+    width: 0%;
+}
+.drawerIcons{
+    position: relative;
+    background-color: #C2986E;
+    border-radius: 50%;
+}
+.drawerIconsHeader{
+    position: relative;
+    background-color: #C2986E;
+    border-radius: 50%;
+}
+.gridPhotos{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    overflow-y: scroll;
+}
+.photos{
+    background-color: red;
+}
