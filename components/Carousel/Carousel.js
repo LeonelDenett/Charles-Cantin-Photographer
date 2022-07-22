@@ -11,9 +11,6 @@ import ChevronRightRoundedIcon from '@mui/icons-material/ChevronRightRounded';
 import KeyboardArrowDownRoundedIcon from '@mui/icons-material/KeyboardArrowDownRounded';
 // Carousel
 import Carousel from 'react-material-ui-carousel'
-import Marriage1 from '../../galerie/marriage.jpg';
-import Marriage2 from '../../galerie/marriage2.jpg';
-import Marriage3 from '../../galerie/marriage3.jpg';
 // Others
 import {motion} from 'framer-motion';
 
@@ -21,29 +18,24 @@ export default function CarouselImages(props)
 {
     var items = [
         {
-            name: "Random Name #1",
             description: "Probably the most random thing you have ever seen!",
-            image: Marriage1
+            image: "https://images.unsplash.com/photo-1544078751-58fee2d8a03b"
         },
         {
-            name: "Random Name #2",
             description: "Hello World!",
-            image: Marriage2
+            image: "https://images.unsplash.com/photo-1597861405049-0b011428568f"
         },
         {
-            name: "Random Name #3",
             description: "Probably the most random thing you have ever seen!",
-            image: Marriage3
+            image: "https://images.unsplash.com/photo-1606495186270-395860907235"
         },
         {
-            name: "Random Name #3",
             description: "Probably the most random thing you have ever seen!",
-            image: Marriage3
+            image: "https://images.unsplash.com/photo-1604017011826-d3b4c23f8914"
         },
         {
-            name: "Random Name #3",
             description: "Probably the most random thing you have ever seen!",
-            image: Marriage3
+            image: "https://images.unsplash.com/photo-1505428215601-90f0007b9e83"
         },
     ]
     return (
