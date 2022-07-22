@@ -75,7 +75,7 @@ function Item(props)
             />
             <IconButton
                 component={motion.button}
-                animate={{y: 20, transition: {repeat: Infinity, duration: 1,repeatDelay:0}}}
+                animate={{y: 30, transition: {repeat: Infinity, duration: 1,repeatDelay:0}}}
                 className={styles.iconContainer}>
                 <KeyboardArrowDownRoundedIcon className={styles.icon}/>
             </IconButton>
