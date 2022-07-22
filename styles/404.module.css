@@ -1,0 +1,23 @@
+.container {
+    text-align: center;
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+    background-color: #FEFBE7;
+    display: flex;
+    height: calc(100vh - 6rem );
+}
+.content{
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+    margin-top: 11rem;
+    z-index: 1000;
+}
+.link{
+    cursor: pointer;
+    text-decoration: underline;
+}
