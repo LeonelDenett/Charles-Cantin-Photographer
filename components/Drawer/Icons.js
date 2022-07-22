@@ -6,18 +6,15 @@ import CameraAltRoundedIcon from '@mui/icons-material/CameraAltRounded';
 import LocalOfferRoundedIcon from '@mui/icons-material/LocalOfferRounded';
 import MailOutlineRoundedIcon from '@mui/icons-material/MailOutlineRounded';
 
-const icons = [
-    <HomeRoundedIcon color="whiteDark" />,
-    <CameraAltRoundedIcon color="whiteDark"/>,
-    <LocalOfferRoundedIcon color="brown"/>,
-    <MailOutlineRoundedIcon color="brown"/>
-]
-
-const ids= [1,2,3,4]
-
-function Icons({i,styles, color}) {
+function Icons({i,styles}) {
+    const icons = [
+        <HomeRoundedIcon key={i} color="whiteDark" />,
+        <CameraAltRoundedIcon key={i} color="whiteDark"/>,
+        <LocalOfferRoundedIcon key={i} color="brown"/>,
+        <MailOutlineRoundedIcon key={i} color="brown"/>
+    ]
     return (
-        <IconButton className={styles.iconContainer} key={ids}>
+        <IconButton className={styles.iconContainer} key={i}>
             {icons[i]}
         </IconButton>
     );

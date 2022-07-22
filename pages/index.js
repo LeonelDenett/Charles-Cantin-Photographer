@@ -9,7 +9,6 @@ import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 import Divider from '@mui/material/Divider';
 import Button from '@mui/material/Button';
-import IconButton from '@mui/material/IconButton';
 // Icons Mui Components
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 import InstagramIcon from '@mui/icons-material/Instagram';
@@ -20,10 +19,6 @@ import PhoneIcon from '@mui/icons-material/Phone';
 import CarouselImages from '../components/Carousel/Carousel';
 // Framer Motion
 import {motion} from 'framer-motion';
-
-
-import Bebe from '../galerie/bebe.jpeg'
-
 
 export default function Home() {
     return (

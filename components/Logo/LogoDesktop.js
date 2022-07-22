@@ -1,7 +1,7 @@
 // Next
 import Image from 'next/image';
 // Logo Image
-import LogoImage from '../../galerie/Logo.png';
+import LogoImage from '../../public/Logo.png';
 // Mui Components
 import Box from '@mui/material/Box';
 // Framer Motion Animation

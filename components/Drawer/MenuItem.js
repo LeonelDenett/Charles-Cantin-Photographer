@@ -41,10 +41,10 @@ function MenuItem({ i,styles, toggle }) {
                 whileTap={{ scale: 0.95 }}
             >
                 <Box className={styles.iconPlaceholder} style={style} >
-                    <Icons i={i} styles={styles} color={colors[i]} />
+                    <Icons i={i} styles={styles} color={colors[i]} key={i} />
                 </Box>
                 <Button onClick={toggle} className={styles.textPlaceholder} style={style} >
-                    <Links styles={styles} title={titles[i]} url={"/" + urls[i]} color={colors[i]} />
+                    <Links styles={styles} title={titles[i]} url={"/" + urls[i]} color={colors[i]} key={i} />
                 </Button>
             </motion.a>
         </Box>

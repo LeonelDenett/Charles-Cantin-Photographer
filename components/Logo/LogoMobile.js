@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import LogoImage from '../../galerie/Logo.png'
+import LogoImage from '../../public/Logo.png'
 import Box from '@mui/material/Box';
 import {motion} from 'framer-motion';
 import {useRouter} from 'next/router';
