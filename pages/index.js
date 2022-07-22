@@ -62,7 +62,7 @@ export default function Home() {
                             <Grid item xs={6}>
                                 <Box className={styles.gridPackagesImage}>
                                     <Box style={{position: 'relative', width: '100%', height: '100%'}}>
-                                        <Image  layout="fill" loading="lazy" src="https://images.unsplash.com/photo-1593106584374-89259e7efb8b" />
+                                        <Image alt="PackagesImage"  layout="fill" loading="lazy" src="https://images.unsplash.com/photo-1593106584374-89259e7efb8b" />
                                     </Box>
                                 </Box>
                             </Grid>
@@ -74,7 +74,7 @@ export default function Home() {
                             <Grid item xs={6}>
                                 <Box className={styles.gridPortfolioImage}>
                                     <Box style={{position: 'relative', width: '100%', height: '100%'}}>
-                                        <Image layout="fill" loading="lazy" src="https://images.unsplash.com/photo-1603574670812-d24560880210" />
+                                        <Image alt="PortfolioImage" layout="fill" loading="lazy" src="https://images.unsplash.com/photo-1603574670812-d24560880210" />
                                     </Box>
                                 </Box>
                             </Grid>

@@ -15,7 +15,7 @@ const icons = [
 
 function Icons({i,styles, color}) {
     return (
-        <IconButton className={styles.iconContainer}>
+        <IconButton className={styles.iconContainer} key={i}>
             {icons[i]}
         </IconButton>
     );

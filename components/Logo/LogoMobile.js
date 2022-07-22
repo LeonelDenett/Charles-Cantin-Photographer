@@ -16,7 +16,8 @@ function LogoMobile({styles}) {
                 objectFit="cover"
                 quality={100}
                 className={styles.logo}
-                src={LogoImage} />
+                src={LogoImage}
+                alt="Logo"/>
         </Box>
     );
 }

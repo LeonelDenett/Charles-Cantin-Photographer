@@ -87,6 +87,7 @@ function Item(props)
                 priority
                 quality={100}
                 src={props.item.image}
+                alt="Carousel"
             />
             <IconButton
                 component={motion.button}

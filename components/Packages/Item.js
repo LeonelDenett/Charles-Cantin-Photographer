@@ -22,7 +22,7 @@ function Item({data}) {
             data.map((value) => {
             const {id, title, description, price, image} = value;
             return (
-                <Grid item xs={12} sm={6} lg={3}>
+                <Grid item xs={12} sm={6} lg={3} key={id}>
                     <Card key={id} sx={{ minWidth: 300 }} component={motion.div} whileHover={{ scale: 1.05}}>
                         <CardActionArea>
                             <CardMedia>

@@ -16,7 +16,8 @@ function LogoDesktop({styles}) {
             <Image
                 quality={100}
                 className={styles.logoDesktop}
-                src={LogoImage} />
+                src={LogoImage}
+                alt="Logo" />
         </Box>
     );
 }
