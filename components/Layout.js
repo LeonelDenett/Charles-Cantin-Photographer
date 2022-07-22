@@ -7,10 +7,12 @@ import Navbar from './Navbar/Navbar';
 
 const Layout = ({children}) => {
     return (
-        <Box className="content">
+        <Box className="container">
             <Head/>
             <Navbar/>
+            <Box className="content">
             {children}
+            </Box>
             <Footer/>
         </Box>
     )

@@ -87,6 +87,7 @@ const data = [
         rows: 2,
         cols: 2,
         category: 'couple',
+        objectFit: 'cover'
     },
     {
         img: 'https://images.unsplash.com/photo-1546015720-b8b30df5aa27',
@@ -98,6 +99,7 @@ const data = [
         title: 'Pregnant',
         rows: 2,
         category: 'pregnant',
+        objectFit: 'cover'
     },
     {
         img: 'https://images.unsplash.com/photo-1609151162377-794faf68b02f',
@@ -190,6 +192,7 @@ const data = [
         cols: 2,
         rows: 2,
         category: 'wedding',
+        objectFit: 'cover'
     },
     {
         img: 'https://images.unsplash.com/photo-1514415008039-efa173293080',

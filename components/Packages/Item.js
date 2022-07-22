@@ -20,7 +20,7 @@ function Item({data}) {
             <Grid container justifyContent={'center'} rowSpacing={2} columnSpacing={2}>
             {
             data.map((value) => {
-            const {id, title, description, price, image} = value;
+            const {id, title, description, price, image, objectFit} = value;
             return (
                 <Grid item xs={12} sm={6} lg={3} key={id}>
                     <Card key={id} sx={{ minWidth: 300 }} component={motion.div} whileHover={{ scale: 1.05}}>
@@ -33,6 +33,7 @@ function Item({data}) {
                                         quality={100}
                                         priority
                                         alt={title}
+                                        objectFit="cover"
                                     />
                                 </Box>
                             </CardMedia>

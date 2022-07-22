@@ -18,24 +18,16 @@ export default function CarouselImages(props)
 {
     var items = [
         {
-            description: "Probably the most random thing you have ever seen!",
-            image: "https://images.unsplash.com/photo-1544078751-58fee2d8a03b"
+            image: "https://images.unsplash.com/photo-1537633552985-df8429e8048b"
         },
         {
-            description: "Hello World!",
-            image: "https://images.unsplash.com/photo-1597861405049-0b011428568f"
+            image: "https://images.unsplash.com/photo-1546032996-6dfacbacbf3f"
         },
         {
-            description: "Probably the most random thing you have ever seen!",
-            image: "https://images.unsplash.com/photo-1606495186270-395860907235"
+            image: "https://images.unsplash.com/photo-1599142296733-1c1f2073e6de"
         },
         {
-            description: "Probably the most random thing you have ever seen!",
-            image: "https://images.unsplash.com/photo-1604017011826-d3b4c23f8914"
-        },
-        {
-            description: "Probably the most random thing you have ever seen!",
-            image: "https://images.unsplash.com/photo-1505428215601-90f0007b9e83"
+            image: "https://images.unsplash.com/photo-1574871786514-46e1680ea587"
         },
     ]
     return (

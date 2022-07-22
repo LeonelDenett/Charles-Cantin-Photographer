@@ -28,7 +28,7 @@ function Items({data, styles}) {
             rowHeight={300}
         >
             {data.map((value) => {
-            const {id, img, rows, cols, title} = value;
+            const {id, img, rows, cols, title, objectFit} = value;
             return (
             <ImageListItem whileTap={{scale: 0.95}} key={id} component={motion.li} cols={matchDownMd ? 4 : cols || 1} rows={rows || 1}>
                 <Image
@@ -37,7 +37,7 @@ function Items({data, styles}) {
                     src={img}
                     alt={title}
                     quality={100}
-                    objectFit="fill"
+                    objectFit={objectFit}
                     priority
                     className={styles.photos}
                 />
