@@ -13,9 +13,11 @@ const icons = [
     <MailOutlineRoundedIcon color="brown"/>
 ]
 
+const ids= [1,2,3,4]
+
 function Icons({i,styles, color}) {
     return (
-        <IconButton className={styles.iconContainer} key={i}>
+        <IconButton className={styles.iconContainer} key={ids}>
             {icons[i]}
         </IconButton>
     );
