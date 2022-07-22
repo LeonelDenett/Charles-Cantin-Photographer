@@ -30,7 +30,7 @@ function Items({data, styles}) {
             {data.map((value) => {
             const {id, img, rows, cols, title} = value;
             return (
-            <ImageListItem whileTap={{scale: 0.7}} component={motion.li} key={id} cols={matchDownMd ? 4 : cols || 1} rows={rows || 1}>
+            <ImageListItem whileTap={{scale: 0.95}} key={id} component={motion.li} cols={matchDownMd ? 4 : cols || 1} rows={rows || 1}>
                 <Image
                     layout="fill"
                     {...srcset(300, rows, cols)}
@@ -38,7 +38,7 @@ function Items({data, styles}) {
                     alt={title}
                     quality={100}
                     objectFit="fill"
-                    loading="lazy"
+                    priority
                     className={styles.photos}
                 />
             </ImageListItem>

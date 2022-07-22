@@ -7,10 +7,10 @@ import LocalOfferRoundedIcon from '@mui/icons-material/LocalOfferRounded';
 import MailOutlineRoundedIcon from '@mui/icons-material/MailOutlineRounded';
 
 const icons = [
-    <HomeRoundedIcon color="beigeDark" />,
+    <HomeRoundedIcon color="whiteDark" />,
     <CameraAltRoundedIcon color="whiteDark"/>,
-    <LocalOfferRoundedIcon color="greenDark"/>,
-    <MailOutlineRoundedIcon color="blueDark"/>
+    <LocalOfferRoundedIcon color="brown"/>,
+    <MailOutlineRoundedIcon color="brown"/>
 ]
 
 function Icons({i,styles, color}) {

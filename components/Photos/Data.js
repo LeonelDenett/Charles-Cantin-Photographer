@@ -1,7 +1,7 @@
 const data = [
     {
         img: 'https://images.unsplash.com/photo-1583939003579-730e3918a45a',
-        title: 'Breakfast',
+        title: 'Wedding',
         rows: 2,
         category: 'wedding',
     },

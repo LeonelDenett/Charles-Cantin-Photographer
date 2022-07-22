@@ -34,23 +34,20 @@ export default function Home() {
             </Box>
             {/* Content */}
             <Box className={styles.content} sx={{marginX: {lg: '10rem'}}}>
-                <Typography component="h1" variant="title">Le Studio Charles Cantin</Typography>
-                <Typography variant="description">C’est l’histoire de… en fait,
-                          c’est votre histoire que j'immortalise : mariage, grossesse, baptême ; seul, en couple ou bien en famille.
-                          Ma principale préoccupation est de répondre le plus précisément et en qualité d’image à la demande de mes clients.
-                          Je mets également un point d’honneur à respecter les contraintes de temps !
+                <Typography component="h1" variant="title">Charles Cantin Studio</Typography>
+                <Typography variant="description">It's the story of... in fact, it's your story that I immortalize: marriage, pregnancy,
+                    baptism; alone, as a couple or as a family. My main concern is to respond as precisely and in image quality to the request
+                    of my customers. I also make it a point of honor to respect the time constraints!
                 </Typography>
-
                 <Divider className={styles.divider} />
-
                 <Grid container rowSpacing={{xs:1, sm:2, md:3}} columnSpacing={{xs:1, sm:2, md:3}}>
                     {/* Packages */}
                     <Grid item xs={12} lg={6}>
                         <Grid container columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
                             <Grid item xs={6}>
                                 <Box className={styles.gridPackages} sx={{paddingX: {md: '1rem', lg: '2rem'}}}>
-                                    <Typography component="h2" variant="subtitle">Decouvert des Packages</Typography>
-                                    <Typography variant="infos">Nous vous proposons des forfaits, découvrez celui qui vous convient</Typography>
+                                    <Typography component="h2" variant="subtitle">Discovery our Packages</Typography>
+                                    <Typography variant="infos">We offer you differents options, discover the one that suits you!</Typography>
                                     <Link href="/packages">
                                     <Button
                                         variant="contained"
@@ -64,7 +61,9 @@ export default function Home() {
                             </Grid>
                             <Grid item xs={6}>
                                 <Box className={styles.gridPackagesImage}>
-                                    <Image src={Bebe} />
+                                    <Box style={{position: 'relative', width: '100%', height: '100%'}}>
+                                        <Image  layout="fill" loading="lazy" src="https://images.unsplash.com/photo-1593106584374-89259e7efb8b" />
+                                    </Box>
                                 </Box>
                             </Grid>
                         </Grid>
@@ -74,13 +73,15 @@ export default function Home() {
                         <Grid container columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
                             <Grid item xs={6}>
                                 <Box className={styles.gridPortfolioImage}>
-                                    <Image src={Bebe} />
+                                    <Box style={{position: 'relative', width: '100%', height: '100%'}}>
+                                        <Image layout="fill" loading="lazy" src="https://images.unsplash.com/photo-1603574670812-d24560880210" />
+                                    </Box>
                                 </Box>
                             </Grid>
                             <Grid item xs={6}>
                                 <Box className={styles.gridPortfolio} sx={{paddingX: {md: '1rem', lg: '2rem'}}}>
-                                    <Typography component="h2" variant="subtitle">Let's check our portfolio</Typography>
-                                    <Typography variant="infos">Nous vous proposons des forfaits, découvrez celui qui vous convient</Typography>
+                                    <Typography component="h2" variant="subtitle">Let's check our Galery</Typography>
+                                    <Typography variant="infos">Take a look at our productions!</Typography>
                                     <Link href="/packages">
                                     <Button
                                         variant="contained"
@@ -96,17 +97,17 @@ export default function Home() {
                     </Grid>
                     <Grid item xs={12} lg={12}>
                         <Box className={styles.gridSocial}>
-                            <Typography component="h2" variant="subtitle">Quieres contactarnos?</Typography>
+                            <Typography component="h2" variant="subtitleSocial">Do you want to contact us??</Typography>
                             <Box className={styles.socialContainer}>
                                 <Box className={styles.social}>
                                     <Link href="https://www.instagram.com/charlescantinphotographer"><InstagramIcon className={styles.icon}/></Link>
                                     <Link href="https://es-la.facebook.com/"><FacebookIcon className={styles.icon}/></Link>
                                 </Box>
                                 <Box className={styles.social}>
-                                    <PhoneIcon/><Typography>+33 7 66666666</Typography>
+                                    <PhoneIcon/><Typography variant="social">+33 7 66666666</Typography>
                                 </Box>
                                 <Box className={styles.social}>
-                                    <AlternateEmailIcon/><Typography>charlescantin@gmail.com</Typography>
+                                    <AlternateEmailIcon/><Typography variant="social">charlescantin@gmail.com</Typography>
                                 </Box>
                             </Box>
                         </Box>

@@ -2,13 +2,13 @@
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 
-function Tabs({filterCategory, tabsData,data}) {
+function Tabs({filterCategory, tabsData}) {
     return (
         <Box>
             {
-            tabsData.map((category, index, icon)=>{
+            tabsData.map((category, index)=>{
                 return (
-                    <Button variant="link" onClick={()=> filterCategory(category)} key={index}>{category}</Button>
+                    <Button style={{position: 'relative', top: '0.5rem'}} variant="link" onClick={()=> filterCategory(category)} key={index}>{category}</Button>
                 )
             })
             }

@@ -31,5 +31,6 @@
     overflow-y: scroll;
 }
 .photos{
-    background-color: red;
+    background-color: rgba(149, 149, 149, 0.3);
+    backdrop-filter: blur(12px);
 }

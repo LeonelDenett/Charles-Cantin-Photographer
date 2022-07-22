@@ -8,6 +8,7 @@
 }
 .button{
     margin-top: 1rem;
+    background-color: #FEFBE7;
 }
 .divider{
     margin-top: 1rem;
@@ -18,15 +19,16 @@
 .gridPackages, .gridPackagesImage, .gridPortfolio, .gridPortfolioImage{
     display: flex;
     height: 100%;
+    min-height: 340px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    box-shadow: inset 0px 0px 5px 0px #393737;
-    background-color: #F9EBC8;
+    box-shadow: inset 0px 0px 5px 0px #FEFBE7;
+    background-color: #393737;
 }
 .gridSocial{
-    background-color: #DAE5D0;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 6px;
+    background-color: #C2986E;
+    box-shadow: inset 0px 0px 5px 0px #393737;
     padding: 1rem;
 }
 .socialContainer{

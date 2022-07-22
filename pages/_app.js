@@ -21,29 +21,68 @@ let theme = createTheme({
             padding: '0.5rem',
             fontWeight: 600,
             letterSpacing: '0.1rem',
-            color: '#393737'
+            color: '#393737',
+            "::selection": {
+                color: '#FEFBE7',
+                backgroundColor: '#393737',
+                borderRadius: "25px"
+            }
         },
         description: {
             fontSize: '1.1rem',
             fontWeight: 400,
-            color: '#393737'
+            color: '#393737',
+            "::selection": {
+                color: '#FEFBE7',
+                backgroundColor: '#393737',
+                borderRadius: "25px"
+            }
         },
         subtitle: {
             marginBottom: '1rem',
             fontWeight: 600,
-            color: '#393737'
+            color: '#FEFBE7',
+            "::selection": {
+                color: '#393737',
+                backgroundColor: '#FEFBE7',
+                borderRadius: "25px"
+            }
+        },
+        subtitleSocial: {
+            marginBottom: '1rem',
+            fontWeight: 600,
+            color: '#393737',
+            "::selection": {
+                color: '#393737',
+                backgroundColor: '#FEFBE7',
+                borderRadius: "25px"
+            }
         },
         infos: {
             fontSize: '1rem',
             fontWeight: 400,
-            color: '#393737'
+            color: '#FEFBE7',
+            "::selection": {
+                color: '#393737',
+                backgroundColor: '#FEFBE7',
+                borderRadius: "25px"
+            }
+        },
+        social: {
+            color: '#393737',
+            marginTop: '0.1rem',
+            "::selection": {
+                color: '#393737',
+                backgroundColor: '#FEFBE7',
+                borderRadius: "25px"
+            }
         },
         link: {
             cursor: 'pointer',
             textTransform: 'uppercase',
             fontWeight: 700,
             letterSpacing: '0.2rem',
-            color: '#393737'
+            color: '#393737',
         },
         drawerTitle: {
             color: '#FEFBE7',
@@ -54,10 +93,15 @@ let theme = createTheme({
         footer: {
             textTransform: 'uppercase',
             fontWeight: 400,
-            color: '#393737',
+            color: '#FEFBE7',
             fontSize: '0.8rem',
             ['@media (min-width:1200px)']: {
                 fontSize: '1rem',
+            },
+            "::selection": {
+                color: '#393737',
+                backgroundColor: '#FEFBE7',
+                borderRadius: "25px"
             }
         }
     }

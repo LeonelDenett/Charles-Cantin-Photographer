@@ -26,7 +26,7 @@ const variants = {
     }
 };
 
-const colors = ["#F9EBC8", "#FEFBE7", "#DAE5D0", "#A0BCC2"];
+const colors = ["#FEFBE7", "#FEFBE7", "#C2986E", "#C2986E"];
 const titles = ["Home", "Photos", "Packages", "Contact"]
 const urls = ['', "photos", "packages", "contact"]
 
