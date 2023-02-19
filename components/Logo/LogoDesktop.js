@@ -13,6 +13,7 @@ function LogoDesktop({styles}) {
             component={motion.div}
             className={styles.logoDesktop}
         >
+            <Box className={styles.blurEffectLogo}></Box>
             <Image
                 quality={100}
                 className={styles.logoDesktop}

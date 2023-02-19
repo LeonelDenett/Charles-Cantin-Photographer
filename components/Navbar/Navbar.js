@@ -25,6 +25,7 @@ function Navbar() {
             </Box>
             {/* Logo Desktop*/}
             <Box className={styles.navbarDesktop}>
+                <Box className={styles.blurEffect}></Box>
                 <Link href="/"><Typography variant="link" className={styles.link}>Home</Typography></Link>
                 <Link href="/photos"><Typography variant="link" className={styles.link}>Photos</Typography></Link>
                 <LogoDesktop styles={styles}/>

@@ -23,6 +23,13 @@
     margin: 2rem;
     position: relative;
     left: 2rem;
+    filter: blur(0px);
+    z-index: 200;
+    transition: all 0.3s;
+}
+.link:hover{
+    scale: 1.1;
+    transition: all 0.3s;
 }
 .logo{
     z-index: 12;
@@ -56,4 +63,25 @@
 }
 .logoDesktop{
     border-radius: 50%;
+}
+
+.blurEffect{
+    height: 3rem;
+    width: 50%;
+    position: absolute;
+    background-color: #fefbe779;
+    filter: blur(5px);
+    border-radius: 1rem;
+
+}
+
+.blurEffectLogo{
+    width: 10.2rem;
+    max-width: 10.2rem;
+    height: 10.1rem;
+    max-height: 10.1rem;
+    border-radius: 50%;
+    background-color: #fefbe779;
+    filter: blur(5px);
+    position: absolute;
 }

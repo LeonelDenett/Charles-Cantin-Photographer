@@ -1,6 +1,7 @@
 // Next
 import Link from 'next/link';
 import Image from 'next/image';
+import {useState, useEffect} from "react";
 // Styles
 import styles from '../styles/Home.module.css';
 // Mui Components
@@ -18,17 +19,25 @@ import PhoneIcon from '@mui/icons-material/Phone';
 // Components
 import CarouselImages from '../components/Carousel/Carousel';
 // Framer Motion
-import {motion} from 'framer-motion';
+import {AnimatePresence, motion} from "framer-motion";
+import Loading from './loading';
+// Variants Framer Motion
+import { fade } from '../components/FramerVariants/Variants';
 
 export default function Home() {
+    const [loading, setLoading] = useState(true)
+    useEffect(() =>{
+        setTimeout(() => setLoading(false), 3000);
+    })
     return (
-        <Box className={styles.container}>
+        <AnimatePresence>
+            <Box component={motion.div} className={styles.container}>
             {/* Carousel */}
             <Box>
                 <CarouselImages />
             </Box>
             {/* Content */}
-            <Box className={styles.content} sx={{marginX: {lg: '10rem'}}}>
+            <Box component={motion.div} key="dashboard" id="dashboard" className={styles.content} sx={{marginX: {lg: '10rem'}}}>
                 <Typography component="h1" variant="title">Charles Cantin Studio</Typography>
                 <Typography variant="description">It's the story of... in fact, it's your story that I immortalize: marriage, pregnancy,
                     baptism; alone, as a couple or as a family. My main concern is to respond as precisely and in image quality to the request
@@ -57,6 +66,7 @@ export default function Home() {
                             <Grid item xs={6}>
                                 <Box className={styles.gridPackagesImage}>
                                     <Box style={{position: 'relative', width: '100%', height: '100%'}}>
+                                        <Box className={styles.photoEffect}></Box>
                                         <Image alt="PackagesImage"  layout="fill" objectFit="cover"  loading="lazy" src="https://images.unsplash.com/photo-1593106584374-89259e7efb8b" />
                                     </Box>
                                 </Box>
@@ -69,6 +79,7 @@ export default function Home() {
                             <Grid item xs={6}>
                                 <Box className={styles.gridPortfolioImage}>
                                     <Box style={{position: 'relative', width: '100%', height: '100%'}}>
+                                        <Box className={styles.photoEffect}></Box>
                                         <Image alt="PortfolioImage" layout="fill" objectFit="cover" loading="lazy" src="https://images.unsplash.com/photo-1603574670812-d24560880210" />
                                     </Box>
                                 </Box>
@@ -94,7 +105,7 @@ export default function Home() {
                         <Box className={styles.gridSocial}>
                             <Typography component="h2" variant="subtitleSocial">Do you want to contact us??</Typography>
                             <Box className={styles.socialContainer}>
-                                <Box className={styles.social}>
+                                <Box className={styles.iconContainer}>
                                     <Link href="https://www.instagram.com/charlescantinphotographer"><InstagramIcon className={styles.icon}/></Link>
                                     <Link href="https://es-la.facebook.com/"><FacebookIcon className={styles.icon}/></Link>
                                 </Box>
@@ -110,5 +121,7 @@ export default function Home() {
                 </Grid>
             </Box>
         </Box>
+        </AnimatePresence>
     )
 }
+

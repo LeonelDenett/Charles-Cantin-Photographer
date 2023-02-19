@@ -27,7 +27,7 @@ const sidebar = {
 function DrawerMobile() {
     const [isOpen, toggleOpen] = useCycle(false, true);
 
-    const url = 'url(https://images.unsplash.com/photo-1657028814638-bf738a9d40c9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80)'
+    const url = 'url(https://images.unsplash.com/photo-1657028814638-bf738a9d40c9'
 
     return (
         <Box>

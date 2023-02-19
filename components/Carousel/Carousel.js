@@ -13,15 +13,16 @@ import KeyboardArrowDownRoundedIcon from '@mui/icons-material/KeyboardArrowDownR
 import Carousel from 'react-material-ui-carousel'
 // Others
 import {motion} from 'framer-motion';
+import { Link, animateScroll as scroll } from "react-scroll";
 
 export default function CarouselImages(props)
 {
     var items = [
         {
-            image: "https://images.unsplash.com/photo-1537633552985-df8429e8048b"
+            image: "https://images.unsplash.com/photo-1522673607200-164d1b6ce486"
         },
         {
-            image: "https://images.unsplash.com/photo-1546032996-6dfacbacbf3f"
+            image: "https://images.unsplash.com/photo-1549997965-dbf7d99eaca5"
         },
         {
             image: "https://images.unsplash.com/photo-1599142296733-1c1f2073e6de"
@@ -73,12 +74,21 @@ function Item(props)
                 src={props.item.image}
                 alt="Carousel"
             />
-            <IconButton
-                component={motion.button}
-                animate={{y: 30, transition: {repeat: Infinity, duration: 1,repeatDelay:0}}}
-                className={styles.iconContainer}>
-                <KeyboardArrowDownRoundedIcon className={styles.icon}/>
-            </IconButton>
+            <Link
+                to="dashboard"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+            >
+                <IconButton
+                    component={motion.button}
+                    animate={{y: 30, transition: {repeat: Infinity, duration: 1,repeatDelay:0}}}
+                    className={styles.iconContainer}
+                >
+                    <KeyboardArrowDownRoundedIcon className={styles.icon}/>
+                </IconButton>
+            </Link>
         </Box>
     )
 }
