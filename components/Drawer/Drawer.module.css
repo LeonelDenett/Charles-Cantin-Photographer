@@ -16,15 +16,16 @@
     bottom: 0;
     width: 100%;
     background: #393737;
+    border: solid .2rem #C2986E;
     z-index: 8;
     margin-top: 2.5rem;
     transition: top 0.3s;
     background-position: center;
-    box-shadow: #393737 7px 0px 12px 0px;
+    box-shadow: #393737 3px 0px 6px 0px;
 }
 .button {
     outline: none;
-    border: none;
+    border: solid 2px #C2986E;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -36,7 +37,7 @@
     height: 2rem;
     border-radius: 50%;
     z-index: 8;
-    background-color: transparent;
+    background-color: #393737;
     display: flex;
     flex:1;
     justify-content: center;

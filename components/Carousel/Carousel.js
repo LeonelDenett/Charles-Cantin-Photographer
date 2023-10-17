@@ -39,6 +39,8 @@ export default function CarouselImages(props)
             NextIcon={<ChevronRightRoundedIcon fontSize="large"/>}
             animation="slide"
             duration={800}
+            interval={6000}
+            stopAutoPlayOnHover={false}
             navButtonsProps={{          // Change the colors and radius of the actual buttons. THIS STYLES BOTH BUTTONS
                 style: {
                     left: 30

@@ -36,7 +36,7 @@ function DrawerMobile() {
                 initial={false}
                 animate={isOpen ? "open" : "closed"}
             >
-                <motion.div className={styles.background} style={isOpen ? {top: '-2.5rem',backgroundImage: url} : {top: '0rem'}} variants={sidebar} />
+                <motion.div className={styles.background} style={isOpen ? {top: '-2.5rem',backgroundImage: url, backgroundSize: "cover",  } : {top: '0rem'}} variants={sidebar} />
                 <Navigation isOpen={isOpen} toggle={() => toggleOpen()} styles={styles} />
                 <MenuToggle isOpen={isOpen} toggle={() => toggleOpen()} styles={styles} />
             </motion.nav>

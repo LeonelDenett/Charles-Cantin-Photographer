@@ -29,7 +29,7 @@ let theme = createTheme({
             }
         },
         description: {
-            fontSize: '1.1rem',
+            fontSize: '1.3rem',
             fontWeight: 400,
             color: '#393737',
             "::selection": {
@@ -39,6 +39,7 @@ let theme = createTheme({
             }
         },
         subtitle: {
+            fontSize: "1.75rem",
             marginBottom: '1rem',
             fontWeight: 600,
             color: '#FEFBE7',
@@ -59,7 +60,7 @@ let theme = createTheme({
             }
         },
         infos: {
-            fontSize: '1rem',
+            fontSize: '1.3rem',
             fontWeight: 400,
             color: '#FEFBE7',
             "::selection": {

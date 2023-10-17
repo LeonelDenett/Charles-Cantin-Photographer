@@ -38,11 +38,13 @@ export default function Home() {
             </Box>
             {/* Content */}
             <Box component={motion.div} key="dashboard" id="dashboard" className={styles.content} sx={{marginX: {lg: '10rem'}}}>
-                <Typography component="h1" variant="title">Charles Cantin Studio</Typography>
-                <Typography variant="description">It's the story of... in fact, it's your story that I immortalize: marriage, pregnancy,
-                    baptism; alone, as a couple or as a family. My main concern is to respond as precisely and in image quality to the request
-                    of my customers. I also make it a point of honor to respect the time constraints!
-                </Typography>
+                <Box className={styles.containerContent}>
+                    <Typography component="h1" variant="title">Charles Cantin Studio</Typography>
+                    <Typography variant="description">It's the story of... in fact, it's your story that I immortalize: marriage, pregnancy,<br/>
+                        baptism; alone, as a couple or as a family. My main concern is to respond as precisely and in image quality to the request<br/>
+                        of my customers. I also make it a point of honor to respect the time constraints!
+                    </Typography>
+                </Box>
                 <Divider className={styles.divider} />
                 <Grid container rowSpacing={{xs:1, sm:2, md:3}} columnSpacing={{xs:1, sm:2, md:3}}>
                     {/* Packages */}
